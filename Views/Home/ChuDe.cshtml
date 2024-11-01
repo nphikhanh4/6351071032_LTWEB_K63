@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Lab1.Models.SACH>
+
+@{
+    ViewBag.Title = "ChuDe";
+}
+<link href="~/Content/templatemo_style.css" rel="stylesheet" />
+<div id="templatemo_content_right">
+    <div class="content-right-item">
+        @foreach (var a in Model)
+        {
+            <div class="templatemo_product_box">
+                <h1>@a.Tensach</h1>
+                <div style="display:flex">
+                    <img style="width:120px; height:120px" src="~/Content/images/@a.Anhbia" />
+                    <div class="product_info">
+                        <p style=" -webkit-line-clamp: 2;">@a.Mota</p>
+                        <h3>@a.Giaban đ</h3>
+                        <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div>
+                        <div class="detail_button"><a href="subpage.html">Detail</a></div>
+                    </div>
+                    <div class="cleaner">&nbsp;</div>
+                </div>
+
+            </div>
+        }
+    </div>
+
+
+    @*<a href="subpage.html"><img src="images/templatemo_ads.jpg" alt="ads" /></a>*@
+</div> <!-- end of content right -->
