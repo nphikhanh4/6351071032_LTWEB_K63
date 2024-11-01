@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\LapTrinhWeb\\Lab1\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8FA94409-73F4-4103-9476-AB6EE5A72A30}|Lab1.csproj|d:\\laptrinhweb\\lab1\\views\\home\\chude.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FA94409-73F4-4103-9476-AB6EE5A72A30}|Lab1.csproj|solutionrelative:views\\home\\chude.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FA94409-73F4-4103-9476-AB6EE5A72A30}|Lab1.csproj|d:\\laptrinhweb\\lab1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FA94409-73F4-4103-9476-AB6EE5A72A30}|Lab1.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FA94409-73F4-4103-9476-AB6EE5A72A30}|Lab1.csproj|d:\\laptrinhweb\\lab1\\views\\home\\chitiet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FA94409-73F4-4103-9476-AB6EE5A72A30}|Lab1.csproj|solutionrelative:views\\home\\chitiet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +39,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\LapTrinhWeb\\Lab1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\LapTrinhWeb\\Lab1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAACiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-01T10:15:44.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChuDe.cshtml",
+              "DocumentMoniker": "D:\\LapTrinhWeb\\Lab1\\Views\\Home\\ChuDe.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\ChuDe.cshtml",
+              "ToolTip": "D:\\LapTrinhWeb\\Lab1\\Views\\Home\\ChuDe.cshtml",
+              "RelativeToolTip": "Views\\Home\\ChuDe.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-01T10:15:42.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChiTiet.cshtml",
+              "DocumentMoniker": "D:\\LapTrinhWeb\\Lab1\\Views\\Home\\ChiTiet.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\ChiTiet.cshtml",
+              "ToolTip": "D:\\LapTrinhWeb\\Lab1\\Views\\Home\\ChiTiet.cshtml",
+              "RelativeToolTip": "Views\\Home\\ChiTiet.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-01T10:15:41.975Z",
+              "EditorCaption": ""
             }
           ]
         }
