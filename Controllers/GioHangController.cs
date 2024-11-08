@@ -78,6 +78,16 @@ namespace Lab1.Controllers
             return View(lstGiohang);
         }
 
+        public ActionResult Capnhatgiohang(int iMasach, int SoLuong)
+        {
+            List<Giohang> lstGiohang = Laygiohang();
+            Giohang sanpham = lstGiohang.Find(n => n.iMasach == iMasach);
+
+            sanpham.iSoluong = SoLuong;
+            return RedirectToAction("DatHang");
+        }
+
+
         public ActionResult Giohangpartial()
         {
             ViewBag.Tongsoluong = TongSoLuong();

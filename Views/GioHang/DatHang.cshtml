@@ -25,14 +25,14 @@
             <td>@String.Format("{0:0,0}", item.dDongia) VNĐ</td>
             <td>@String.Format("{0:0,0}", item.dThanhtien) VNĐ</td>
             <td>
-                @Html.ActionLink("Xóa", "XoaGioHang", new { @iMaSP = item.iMasach })
+                @Html.ActionLink("Xóa", "XoaGioHang")
             </td>
             <td>
-                @using (Html.BeginForm("Capnhatgiohang", "GioHang", new { @iMaSP = item.iMasach }))
+                @using (Html.BeginForm("Capnhatgiohang", "GioHang", new { iMasach = item.iMasach }))
                 {
-                <input type="number" name="SoLuong" value="@item.iSoluong" />
+                    <input type="number" name="SoLuong" value="@item.iSoluong" />
                 <td><input type="submit" value="Cập nhật" /></td>
-            }
+                }
 
             </tr>
         }
