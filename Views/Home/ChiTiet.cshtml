@@ -9,13 +9,14 @@
     @foreach (var a in Model)
     {
        <div style="display: flex">
-           <a href="@Url.Action("ChiTiet","Home", new { id = a.Masach })" )><img style="width:120px; height:120px" src="~/Content/images/@a.Anhbia" /></a>
+           <a href="@Url.Action("ChiTiet","Home", new { id = a.Masach })" )><img style="width:250px; height:250px" src="~/Content/images/@a.Anhbia" /></a>
            <div>
                <h3 style="color:red;"> Tên sách: @a.Tensach</h3>
                <p>Mô tả: @a.Mota</p>
 
-               <p style="color: red;">@a.Giaban đ</p>
-               <button style="background-color: red"> Đặt mua.</button>
+               <p style="color: red; font-size: 16px; font-weight: bold">@a.Giaban đ</p>
+               <button style="background-color: red; position:absolute; right:320px; bottom:160px; width:120px; height:40px;">
+                   <a href="@Url.Action("ThemGioHang", "GioHang", new { iMasach = a.Masach, strURL = Url.Action("GioHang", "GioHang") })">Đặt mua.</a></button>
            </div>
        </div>
     }

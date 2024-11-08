@@ -1,0 +1,51 @@
+﻿@using Lab1.Models
+@model List<Giohang>
+
+@{
+    ViewBag.Title = "GioHang";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2 style="text-align:center">THÔNG TIN GIỎ HÀNG</h2>
+
+<table align="center" border="1">
+    <tr style="text-align:center; font-weight:bold;">
+        <td>STT</td>
+        <td>Tên sách</td>
+        <td>Ảnh bìa</td>
+        <td>Số lượng</td>
+        <td>Đơn giá</td>
+        <td>Thành tiền</td>
+        <td>Hành động</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        if (item.iSoluong > 0)
+        {
+            <tr style="text-align:center; font-weight:bold;">
+                <td>@item.iMasach</td>
+                <td>@item.sTensach</td>
+                <td><img style="width:80px; height:80px" src="~/Content/images/@item.sAnhbia" /></td>
+                <td>@item.iSoluong</td>
+                <td>@String.Format("{0:0,0}", item.dDongia) VNĐ</td>
+                <td>@String.Format("{0:0,0}", item.dThanhtien) VNĐ</td>
+                <td>
+                    <a href="@Url.Action("ChiTiet", "Home", new { id = item.iMasach })">Chi tiết</a> |
+                    @Html.ActionLink("Xóa", "XoaHang", new { iMasach = item.iMasach })
+                </td>
+            </tr>
+        }
+    }
+    <tr style="font-weight: bold; text-align:right; color:red">
+        <td colspan="4">Số lượng sách: @ViewBag.Tongsoluong</td>
+        <td colspan="3">Tổng tiền: @String.Format("{0:0,0}", ViewBag.Tongtien) VNĐ</td>
+    </tr>
+    <tr>
+        <td>@Html.ActionLink("Xóa giỏ hàng", "XoaGiohang", "GioHang")</td>
+    </tr>
+    <tr>
+        <td>@Html.ActionLink("Đặt hàng", "DatHang", "GioHang")</td>
+    </tr>
+
+</table>
