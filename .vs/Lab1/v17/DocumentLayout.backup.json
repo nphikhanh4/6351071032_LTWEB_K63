@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\LapTrinhWeb\\Lab1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8FA94409-73F4-4103-9476-AB6EE5A72A30}|Lab1.csproj|d:\\laptrinhweb\\lab1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8FA94409-73F4-4103-9476-AB6EE5A72A30}|Lab1.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8FA94409-73F4-4103-9476-AB6EE5A72A30}|Lab1.csproj|d:\\laptrinhweb\\lab1\\views\\admin\\sach.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FA94409-73F4-4103-9476-AB6EE5A72A30}|Lab1.csproj|solutionrelative:views\\admin\\sach.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FA94409-73F4-4103-9476-AB6EE5A72A30}|Lab1.csproj|d:\\laptrinhweb\\lab1\\controllers\\giohangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FA94409-73F4-4103-9476-AB6EE5A72A30}|Lab1.csproj|solutionrelative:controllers\\giohangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8FA94409-73F4-4103-9476-AB6EE5A72A30}|Lab1.csproj|d:\\laptrinhweb\\lab1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FA94409-73F4-4103-9476-AB6EE5A72A30}|Lab1.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FA94409-73F4-4103-9476-AB6EE5A72A30}|Lab1.csproj|d:\\laptrinhweb\\lab1\\views\\admin\\suasach.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FA94409-73F4-4103-9476-AB6EE5A72A30}|Lab1.csproj|solutionrelative:views\\admin\\suasach.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FA94409-73F4-4103-9476-AB6EE5A72A30}|Lab1.csproj|d:\\laptrinhweb\\lab1\\views\\admin\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8FA94409-73F4-4103-9476-AB6EE5A72A30}|Lab1.csproj|solutionrelative:views\\admin\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,21 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GioHangController.cs",
-              "DocumentMoniker": "D:\\LapTrinhWeb\\Lab1\\Controllers\\GioHangController.cs",
-              "RelativeDocumentMoniker": "Controllers\\GioHangController.cs",
-              "ToolTip": "D:\\LapTrinhWeb\\Lab1\\Controllers\\GioHangController.cs*",
-              "RelativeToolTip": "Controllers\\GioHangController.cs*",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAWwGkAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T14:13:31.372Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
@@ -51,15 +46,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\LapTrinhWeb\\Lab1\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\LapTrinhWeb\\Lab1\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Suasach.cshtml",
+              "DocumentMoniker": "D:\\LapTrinhWeb\\Lab1\\Views\\Admin\\Suasach.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Suasach.cshtml",
+              "ToolTip": "D:\\LapTrinhWeb\\Lab1\\Views\\Admin\\Suasach.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Suasach.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-08T13:19:03.594Z",
+              "WhenOpened": "2024-11-15T09:34:59.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\LapTrinhWeb\\Lab1\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "D:\\LapTrinhWeb\\Lab1\\Controllers\\AdminController.cs*",
+              "RelativeToolTip": "Controllers\\AdminController.cs*",
+              "ViewState": "AgIAANoAAAAAAAAAAAAAAPIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T09:34:52.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Sach.cshtml",
+              "DocumentMoniker": "D:\\LapTrinhWeb\\Lab1\\Views\\Admin\\Sach.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Sach.cshtml",
+              "ToolTip": "D:\\LapTrinhWeb\\Lab1\\Views\\Admin\\Sach.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Sach.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T09:17:45.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\LapTrinhWeb\\Lab1\\Views\\Admin\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Login.cshtml",
+              "ToolTip": "D:\\LapTrinhWeb\\Lab1\\Views\\Admin\\Login.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Login.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-15T09:16:50.88Z",
               "EditorCaption": ""
             }
           ]

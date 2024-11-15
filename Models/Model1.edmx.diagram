@@ -20,6 +20,7 @@
         <AssociationConnector Association="QLBANSACHModel.FK_NhaXB" ManuallyRouted="false" />
         <AssociationConnector Association="QLBANSACHModel.FK_Sach" ManuallyRouted="false" />
         <AssociationConnector Association="QLBANSACHModel.FK_TacGia" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="QLBANSACHModel.Admin" Width="1.5" PointX="8.5" PointY="6.625" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

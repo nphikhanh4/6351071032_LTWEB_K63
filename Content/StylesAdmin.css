@@ -1,0 +1,136 @@
+﻿/* RESET CSS */
+body, h1, ul, li, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    background: #f4f4f9;
+    color: #333;
+}
+
+/* SHELL (CONTAINER) */
+#shell {
+    width: 960px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* HEADER */
+#header {
+    padding: 20px;
+    background: #2c3e50; /* Xanh navy */
+    color: #ecf0f1; /* Trắng sáng */
+    text-align: center;
+}
+
+    #header h1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #header .social {
+        margin-top: 10px;
+    }
+
+        #header .social span {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        #header .social ul {
+            margin-top: 5px;
+            display: inline-block;
+        }
+
+            #header .social ul li {
+                display: inline;
+                margin-right: 10px;
+            }
+
+                #header .social ul li a {
+                    color: #f1c40f; /* Vàng gold */
+                    text-decoration: none;
+                    font-weight: bold;
+                    transition: color 0.3s;
+                }
+
+                    #header .social ul li a:hover {
+                        color: #3498db; /* Xanh dương sáng */
+                    }
+
+/* NAVIGATION */
+#navigation {
+    background: #34495e; /* Tông navy đậm hơn */
+    padding: 10px 0;
+    text-align: center;
+}
+
+    #navigation ul {
+        list-style: none;
+    }
+
+        #navigation ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+            #navigation ul li a {
+                color: #ecf0f1; /* Trắng sáng */
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 14px;
+                padding: 8px 12px;
+                border-radius: 4px;
+                transition: background 0.3s, color 0.3s;
+            }
+
+                #navigation ul li a:hover {
+                    background: #f1c40f; /* Vàng gold */
+                    color: #2c3e50; /* Xanh navy đậm */
+                }
+
+/* MAIN CONTENT */
+#main {
+    padding: 20px;
+}
+
+/* FOOTER */
+#footer {
+    background: #2c3e50; /* Xanh navy */
+    color: #bdc3c7; /* Xám nhạt */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 12px;
+}
+
+    #footer p {
+        margin: 5px 0;
+    }
+
+    #footer a {
+        color: #f1c40f; /* Vàng gold */
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+        #footer a:hover {
+            color: #3498db; /* Xanh dương sáng */
+        }
+
+/* CLEAR FLOAT */
+.cl {
+    clear: both;
+}

@@ -5,6 +5,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+using PagedList;
+using PagedList.Mvc;
+
 namespace Lab1.Controllers
 {
     public class HomeController : Controller
@@ -12,19 +15,33 @@ namespace Lab1.Controllers
         // GET: Home
         QLBANSACHEntities1 db = new QLBANSACHEntities1();
 
-        public ActionResult Index()
+        public ActionResult Index(int? page)
         {
-            using (QLBANSACHEntities1 db = new QLBANSACHEntities1())
-            {
-                List<SACH> dsSach = db.SACHes.ToList();
-                var chuDeList = db.CHUDEs.ToList(); // Lấy danh sách chủ đề từ cơ sở dữ liệu
-                var NXBList = db.NHAXUATBANs.ToList();
-                ViewBag.ChuDeList = chuDeList;
-                ViewBag.NXBList = NXBList;
-                return View(dsSach);
-            }
+            int pageSize = 5;
+            int pageNum = (page ?? 1);
+
+            var sachMoi = laysachmoi(15);
+
+            return View(sachMoi.ToPagedList(pageNum, pageSize));    
         }
 
+        private List<SACH> laysachmoi(int count)
+        {
+            QLBANSACHEntities1 data = new QLBANSACHEntities1();
+            return data.SACHes.OrderByDescending(a => a.Ngaycapnhat).ToList();
+        }
+
+        public ActionResult GetNewestBook(int a = 5)
+        {
+            ViewBag.a = a;
+            var books = db.SACHes
+              .Include("CHUDE")
+              .Include("NHAXUATBAN")
+              .OrderByDescending(b => b.Ngaycapnhat) 
+              .Take(a)
+              .ToList();
+            return View(books);
+        }
 
         public ActionResult ChuDe()
         {
@@ -53,24 +70,8 @@ namespace Lab1.Controllers
         {
             using (QLBANSACHEntities1 db = new QLBANSACHEntities1())
             {
-                var chuDeList = db.CHUDEs.ToList(); // Lấy danh sách chủ đề từ cơ sở dữ liệu
-                var NXBList = db.NHAXUATBANs.ToList();
-                ViewBag.ChuDeList = chuDeList;
-                ViewBag.NXBList = NXBList;
                 var books = db.SACHes.Where(b => b.Masach == id).ToList();
                 return View(books);
-            }
-        }
-    public ActionResult layoutLeft()
-        {
-            using (QLBANSACHEntities1 db = new QLBANSACHEntities1())
-            {
-                List<SACH> dsSach = db.SACHes.ToList();
-                var chuDeList = db.CHUDEs.ToList(); // Lấy danh sách chủ đề từ cơ sở dữ liệu
-                var NXBList = db.NHAXUATBANs.ToList();
-                ViewBag.ChuDeList = chuDeList;
-                ViewBag.NXBList = NXBList;
-                return View(dsSach);
             }
         }
     }

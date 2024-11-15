@@ -36,8 +36,8 @@
                     <div class="product_info">
                         <p style=" -webkit-line-clamp: 2;">@a.Mota</p>
                         <h3>@a.Giaban đ</h3>
-                        <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div>
-                        <div class="detail_button"><a href="subpage.html">Detail</a></div>
+                        <div class="buy_now_button"><a href="@Url.Action("ThemGioHang", "GioHang", new { iMasach = a.Masach, strURL = Url.Action("GioHang", "GioHang") })">Buy Now</a></div>
+                        <div class="detail_button"><a href="@Url.Action("ChiTiet", "Home", new { iMasach = a.Masach, strURL = Url.Action("GioHang", "GioHang") })">Detail</a></div>
                     </div>
                     <div class="cleaner">&nbsp;</div>
                 </div>

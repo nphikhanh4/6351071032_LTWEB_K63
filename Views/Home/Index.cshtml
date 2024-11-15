@@ -1,5 +1,6 @@
-﻿@model IEnumerable<Lab1.Models.SACH>
-
+﻿@using Lab1.Models
+@using PagedList.Mvc
+@model  PagedList.PagedList<SACH>
 @{
     ViewBag.Title = "Index";
 }
@@ -24,26 +25,37 @@
         </div>
     </div> <!-- end of content left -->
 </div> <!-- end of content -->
-
-<div id="templatemo_content_right">
-    <div class="content-right-item">
-        @foreach (var a in Model)
-        {
-            <div class="templatemo_product_box">
-                <h1>@a.Tensach</h1>
-                <div style="display:flex">
-                    <a href="@Url.Action("ChiTiet","Home", new { id = a.Masach })" )><img style="width:120px; height:120px" src="~/Content/images/@a.Anhbia" /></a>
-                    <div class="product_info">
-                        <p style=" -webkit-line-clamp: 2;">@a.Mota</p>
-                        <h3>@a.Giaban đ</h3>
-                        <div class="buy_now_button"><a href="@Url.Action("ThemGioHang", "GioHang", new { iMasach = a.Masach, strURL = Url.Action("GioHang", "GioHang") })">Buy Now</a></div>
-                        <div class="detail_button"><a href="subpage.html">Detail</a></div>
+<div style="display: flex; flex-direction: column; justify-content: left">
+    <div id="templatemo_content_right" style="display:flex">
+        <div class="content-right-item" style="display: flex; flex-direction: column; justify-content: left">
+            @foreach (var a in Model)
+            {
+                <div class="templatemo_product_box">
+                    <h1>@a.Tensach</h1>
+                    <div style="display:flex">
+                        <a href="@Url.Action("ChiTiet","Home", new { id = a.Masach })" )><img style="width:120px; height:120px" src="~/Content/images/@a.Anhbia" /></a>
+                        <div class="product_info">
+                            <p style=" -webkit-line-clamp: 2;">@a.Mota</p>
+                            <h3>@a.Giaban đ</h3>
+                            <div class="buy_now_button"><a href="@Url.Action("ThemGioHang", "GioHang", new { iMasach = a.Masach, strURL = Url.Action("GioHang", "GioHang") })">Buy Now</a></div>
+                            <div class="detail_button"><a href="@Url.Action("ChiTiet", "Home", new { iMasach = a.Masach, strURL = Url.Action("GioHang", "GioHang") })">Detail</a></div>
+                        </div>
+                        <div class="cleaner">&nbsp;</div>
                     </div>
-                    <div class="cleaner">&nbsp;</div>
                 </div>
-
-            </div>
-        }
-    </div>
-
-</div> <!-- end of content right -->
+            }
+        </div>
+    </div> <!-- end of content right -->
+</div>
+<div style="margin-left: 550px">
+   Trang @(Model.PageCount<Model.PageNumber? 0:Model.PageNumber)/@Model.PageCount
+</div>
+<div class="MenuPage" style="margin-left:500px">
+    @Html.PagedListPager(Model, page=>Url.Action("Index", new {page=page}))
+</div>
+<style>
+    .MenuPage li {
+        display: inline;
+        margin: 5px;
+    }
+</style>

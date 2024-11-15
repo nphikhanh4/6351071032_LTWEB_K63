@@ -72,3 +72,7 @@ D:\LapTrinhWeb\Lab1\obj\Debug\Lab1.dll
 D:\LapTrinhWeb\Lab1\obj\Debug\Lab1.pdb
 D:\LapTrinhWeb\Lab1\bin\EntityFramework.dll
 D:\LapTrinhWeb\Lab1\bin\EntityFramework.xml
+D:\LapTrinhWeb\Lab1\bin\PagedList.dll
+D:\LapTrinhWeb\Lab1\bin\PagedList.Mvc.dll
+D:\LapTrinhWeb\Lab1\bin\PagedList.xml
+D:\LapTrinhWeb\Lab1\bin\PagedList.Mvc.xml

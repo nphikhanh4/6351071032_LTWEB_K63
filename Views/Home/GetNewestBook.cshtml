@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "GetNewestBook";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/templatemo_style.css" rel="stylesheet" />
+
+<!-- Content Section -->
+<div id="templatemo_content">
+    <div id="templatemo_content_left">
+        <!-- Categories Section -->
+        <div class="templatemo_content_left_section">
+            <h1>Categories</h1>
+            <div>
+                @Html.Action("ChuDe")
+            </div>
+        </div>
+        <!-- Bestsellers Section -->
+        <div class="templatemo_content_left_section">
+            <h1>Publisher</h1>
+            <div>
+                @Html.Action("NXB")
+            </div>
+        </div>
+    </div> <!-- end of content left -->
+</div> <!-- end of content -->
+
+
+<div id="templatemo_content_right" style="min-height: 500px">
+    <div class="content-right-item">
+        <h1>TOP @ViewBag.a SÁCH MỚI NHẤT</h1>
+
+        @foreach (var a in Model)
+        {
+            <div class="templatemo_product_box">
+                <h1>@a.Tensach</h1>
+                <div style="display:flex">
+                    <a href="@Url.Action("ChiTiet","Home", new { id = a.Masach })" )><img style="width:120px; height:120px" src="~/Content/images/@a.Anhbia" /></a>
+                    <div class="product_info">
+                        <p style=" -webkit-line-clamp: 2;">@a.Mota</p>
+                        <h3>@a.Giaban đ</h3>
+                        <div class="buy_now_button"><a href="@Url.Action("ThemGioHang", "GioHang", new { iMasach = a.Masach, strURL = Url.Action("GioHang", "GioHang") })">Buy Now</a></div>
+                        <div class="detail_button"><a href="@Url.Action("ChiTiet", "Home", new { iMasach = a.Masach, strURL = Url.Action("GioHang", "GioHang") })">Detail</a></div>
+                    </div>
+                    <div class="cleaner">&nbsp;</div>
+                </div>
+            </div>
+        }
+    </div>
+</div> <!-- end of content right -->
